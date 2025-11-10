@@ -1,6 +1,8 @@
-# 🖐️ HandScroll - Control Your Browser with Hand Gestures ✨
+# 🖐️ AirSwipe - Control Your Browser with Hand Gestures ✨
 
-![Project Demo](https://github.com/beus421/handscroll/blob/main/demo.gif)
+<p align="center">
+  <img src="icon.png" alt="AirSwipe Logo" width="128" height="128">
+</p>
 
 <p align="center">
   <a href="https://chrome.google.com/webstore">
@@ -9,14 +11,14 @@
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" alt="License">
   </a>
-  <a href="https://github.com/beus421/handscroll/stargazers">
-    <img src="https://img.shields.io/github/stars/beus421/handscroll?style=for-the-badge" alt="Stars">
+  <a href="https://github.com/beus421/AirSwipe/stargazers">
+    <img src="https://img.shields.io/github/stars/beus421/AirSwipe?style=for-the-badge" alt="Stars">
   </a>
 </p>
 
 ## 🚀 Overview
 
-**HandScroll** is a Chrome extension that lets you control any webpage with hand gestures using AI-powered hand tracking. No keyboard, no mouse – just your hands! Perfect for accessibility, hands-free browsing, or just showing off your futuristic browsing setup.
+**AirSwipe** is a Chrome extension that lets you control any webpage with hand gestures using AI-powered hand tracking. No keyboard, no mouse – just your hands! Perfect for accessibility, hands-free browsing, or just showing off your futuristic browsing setup.
 
 ### ✨ Key Features
 
@@ -43,7 +45,7 @@
 
 ### Option 1: Chrome Web Store (Coming Soon! 🎉)
 
-1. Visit the [Chrome Web Store page](#) (link coming soon)
+1. Visit the Chrome Web Store page (link will be added after publication)
 2. Click "Add to Chrome"
 3. Grant camera permissions when prompted
 4. Start gesturing!
@@ -52,15 +54,15 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/beus421/handscroll.git
-   cd handscroll
+   git clone https://github.com/beus421/AirSwipe.git
+   cd AirSwipe
    ```
 
 2. **Load in Chrome:**
    - Open Chrome and navigate to `chrome://extensions/`
    - Enable "Developer mode" (toggle in top-right corner)
    - Click "Load unpacked"
-   - Select the `handscroll` directory
+   - Select the `AirSwipe` directory
 
 3. **Grant Permissions:**
    - Click the extension icon in your browser toolbar
@@ -83,6 +85,19 @@
 - **Camera Toggle** - Hide/show camera view (gestures work either way!)
 - **Indicator Toggle** - Show/hide gesture notification popups
 
+## 🔒 Privacy
+
+AirSwipe is built with privacy as the top priority:
+
+- ✅ All processing happens **locally on your device**
+- ✅ Camera feed is **never stored, recorded, or transmitted**
+- ✅ No external servers involved
+- ✅ No analytics or tracking
+- ✅ Settings stored locally only
+- ✅ 100% open source and transparent
+
+Read our full [Privacy Policy](PRIVACY.md) for details.
+
 ## 🛠️ Technologies Used
 
 - [MediaPipe](https://developers.google.com/mediapipe) - Google's ML solution for hand tracking
@@ -90,4 +105,44 @@
 - **Vanilla JavaScript** - No frameworks, pure performance
 - **Canvas API** - Real-time hand skeleton visualization
 - **Chrome Storage API** - Persistent settings storage
+- **Offscreen Document API** - Secure camera processing
 
+## 🏗️ Architecture
+
+AirSwipe uses Chrome's Manifest V3 architecture for maximum security and performance:
+
+- **Background Service Worker** - Manages extension lifecycle
+- **Offscreen Document** - Isolated environment for camera and MediaPipe processing
+- **Content Script** - Handles page scrolling and user interface
+- **Popup** - Settings and control interface
+
+All MediaPipe files are bundled locally (~17MB) to ensure reliability and privacy.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [MediaPipe](https://developers.google.com/mediapipe) by Google for the amazing hand tracking technology
+- Chrome Extensions team for comprehensive documentation
+- All contributors and users of AirSwipe
+
+## 📧 Contact
+
+- GitHub: [@beus421](https://github.com/beus421)
+- Issues: [GitHub Issues](https://github.com/beus421/AirSwipe/issues)
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://github.com/beus421">beus421</a></p>
